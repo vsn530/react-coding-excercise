@@ -11,6 +11,7 @@ Create an app that does the following:
     - price
     - isAvailable
 - Save the changes using React "setState"
+- Button to go back to main list page
 - On every update, log the full menu to the console
 
 Then, write some unit tests for the components you made
@@ -22,7 +23,7 @@ Couple things I want to see:
 - Add a "router" library to handle the page changes (https://create-react-app.dev/docs/adding-a-router)
 - Use some stateless components for data display
 - Using local state to hold the updated items
-- Use basic CSS to make the components look good (nothing crazy, but just somewhat presentable)
+- Use CSS to make the components look good (nothing crazy, but just somewhat presentable)
 - Have at least 75% unit test coverage (`npm run coverage`)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
