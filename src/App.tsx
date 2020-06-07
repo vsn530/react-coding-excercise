@@ -1,6 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import menuData from './menu-data.json';
+
+console.log('Menu Data');
+console.log(menuData);
 
 function App() {
   return (
