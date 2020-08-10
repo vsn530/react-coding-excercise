@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+* {  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {  
+  /* background: #344a72; */
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.8;
+  /* background-color: rgb(94, 190, 190); */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*  */
+.container {
+  margin:  auto;
+  max-width: 1000px;
+  padding: 10px;
+}
+
+/* Header */
+header{
+  background-color: #344a72;
+  position: static;
+  top: 0;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  justify-content: start;
+}
+
+.header button{
+  display: block;
+  margin-top: 10px;
+  width: 50%;
+}
+
+
+/* Home */
+.menulist{
+  margin-top: 10px;
+  list-style: none;
+}
+
+.menulist li{
+  border-bottom: 0.1px solid grey;
+}
+.menu-item{
+  margin: 5px;
+  color: black;
+  /* border: 0.2 px solid black; */
+}
+
+.menu-item:hover{  
+  color: rgb(207, 18, 49);
+  text-decoration: underline;
+  transition: ease-in;  
+}
+
+
+/* Details page */
+#item-details{
+  display: grid ;
+  grid-template-columns: 50% 50%;
+  justify-content: start;
+  margin-top: 30px;
+}
+
+.item-info{ 
+  display: flex row;
+  margin: 10px;
+
+}
+
+.item-info label{
+  display: block;
+  font-weight: bold;
+}
+
+.item-info input,textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;  
+}
+
+#itemavailablity{
+  height: 30px;
+  width: 30px;
+}
+.group{
+  margin-bottom: 10px;
+}
+
+img{
+  margin: 10px 20px;
+  max-width: 100%;
+  height: 390px;
+  /* width: 300px; */
+}
+
+#update{  
+  display: block;
+  width: 100% ;
+  
+  padding: 10px;
+  margin-top: 35px;
+  background: #344a72;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media(max-width: 700px) {
+  img{
+    height: 200px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Not Found Page */
